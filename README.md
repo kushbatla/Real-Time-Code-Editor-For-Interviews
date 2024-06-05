@@ -29,3 +29,15 @@ Code Editor For Interviews  is a real-time code collaboration web application th
 4. Start collaborating with others in the same room.
 
 
+#### Docker Method
+- This method requires docker and docker-compose to be installed in your system.
+- Make sure you are in the root of your project and run the following command.
+
+```shell
+docker compose build --no-cache
+```
+after the build is complete run the containers using the following command
+```shell
+docker compose up
+```
+now open localhost:3000 in your browser.
