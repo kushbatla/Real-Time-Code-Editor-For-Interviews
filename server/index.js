@@ -6,11 +6,11 @@ const ACTIONS = require("./Actions");
 const path = require("path");
 
 const server = http.createServer(app);
-const dirname=path.resolve();
-app.use(express.static(path.join(dirname,'./client/build')))
-app.get('*',function(req,res){
-  res.sendFile(path.join(dirname,'./client/build/index.html'))
-})
+// const dirname=path.resolve();
+// app.use(express.static(path.join(dirname,'./client/build')))
+// app.get('*',function(req,res){
+//   res.sendFile(path.join(dirname,'./client/build/index.html'))
+// })
 
 const io = new Server(server);
 
