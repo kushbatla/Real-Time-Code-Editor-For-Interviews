@@ -79,7 +79,7 @@ function EditorPage() {
   const copyRoomId = async () => {
     try {
       await navigator.clipboard.writeText(roomId);
-      toast.success(`roomIs is copied`);
+      toast.success(`roomId is copied`);
     } catch (error) {
       console.log(error);
       toast.error("unable to copy the room Id");
